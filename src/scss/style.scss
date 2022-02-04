@@ -1,0 +1,33 @@
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'responsi';
+@import 'linea';
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.contenedor{
+    width: 90% ;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: palevioletred;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: cursive;
+
+}
+
+

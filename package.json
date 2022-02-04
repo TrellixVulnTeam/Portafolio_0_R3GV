@@ -1,0 +1,15 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Scss, HTML, css",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "node-sass -watch --output-style expanded --precision 6 src/scss/style.scss -o dist/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rosalba",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

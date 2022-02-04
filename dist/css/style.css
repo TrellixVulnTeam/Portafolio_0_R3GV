@@ -1,0 +1,545 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
+@import url("https://fonts.googleapis.com/css2? family= Oxygen:wght@300 & display=swap");
+/* line 2, src/scss/_header.scss */
+header {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to right, #faf49f, #e18de4);
+  position: relative;
+  /*
+    .menu{
+        margin: 40px;
+        font-family: 'Oxygen', sans-serif;
+        text-align: right;
+        a{
+            margin: 0 10px;
+            color: #ffffff;
+            padding-bottom: 5px;
+            display: inline-block;
+            font-size:12px ;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            &:hover{
+                border-bottom: 2px solid #ffffff;
+            }
+        }
+    }*/
+}
+
+/* line 26, src/scss/_header.scss */
+header .contenedor-texto {
+  display: flex;
+  margin: 150px 0;
+  justify-content: center;
+  align-content: center;
+}
+
+/* line 31, src/scss/_header.scss */
+header .contenedor-texto .texto {
+  text-align: center;
+}
+
+/* line 33, src/scss/_header.scss */
+header .contenedor-texto .texto img {
+  width: 130px;
+}
+
+/* line 36, src/scss/_header.scss */
+header .contenedor-texto .texto .nombre {
+  padding: 10px;
+  width: 400px;
+  text-align: center;
+  width: 100%;
+  line-height: 25px;
+  color: #ffffff;
+  font-size: 40px;
+  overflow: hidden;
+}
+
+/* line 47, src/scss/_header.scss */
+header .contenedor-texto .texto .profesion {
+  padding: 10px;
+  width: 225px;
+  text-align: center;
+  border-right: 2px solid #181111;
+  width: 100%;
+  line-height: 25px;
+  color: #ffffff;
+  font-size: 28px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: maquina-escribir 6s steps(15) infinite alternate, cursor 0.5s infinite;
+}
+
+@keyframes maquina-escribir {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* line 7, src/scss/_main.scss */
+.main .abaut .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 10, src/scss/_main.scss */
+.main .abaut .contenedor .photo {
+  border: darkgray;
+  display: inline-block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 3px 10px rgba(126, 124, 124, 0.9);
+  border-radius: 5px;
+}
+
+/* line 19, src/scss/_main.scss */
+.main .abaut .contenedor .photo img {
+  display: block;
+  max-width: 200px;
+  border-radius: 5px;
+}
+
+/* line 23, src/scss/_main.scss */
+.main .abaut .contenedor .photo img:hover {
+  width: 300px;
+}
+
+/* line 28, src/scss/_main.scss */
+.main .abaut .contenedor .photo .piedeimagen {
+  font-family: 'Próximamente', cursiva;
+}
+
+/* line 33, src/scss/_main.scss */
+.main .abaut .contenedor .description {
+  padding-top: 10%;
+}
+
+/* line 35, src/scss/_main.scss */
+.main .abaut .contenedor .description .contenido {
+  padding: 20px;
+  margin: 1px 0px 0px;
+}
+
+/* line 43, src/scss/_main.scss */
+.main .proyects {
+  background: #e9e5e9;
+  padding: 70px 0;
+  margin-bottom: -30px;
+}
+
+/* line 47, src/scss/_main.scss */
+.main .proyects .contenedor {
+  overflow: hidden;
+}
+
+/* line 51, src/scss/_main.scss */
+.main .proyects .contenedor-proyectos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 56, src/scss/_main.scss */
+.main .proyects .contenedor-proyectos .proyecto {
+  width: 23%;
+  background: #ffff;
+  padding: 10px;
+  box-shadow: 0px 3px 10px rgba(126, 124, 124, 0.9);
+  margin: 15px;
+}
+
+/* line 62, src/scss/_main.scss */
+.main .proyects .contenedor-proyectos .proyecto:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 0 10px 1px black;
+}
+
+/* line 67, src/scss/_main.scss */
+.main .proyects .contenedor-proyectos .proyecto .imagen {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* line 70, src/scss/_main.scss */
+.main .proyects .contenedor-proyectos .proyecto .imagen img {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 3px;
+}
+
+/* line 76, src/scss/_main.scss */
+.main .proyects .contenedor-proyectos .proyecto .descripcion {
+  text-align: center;
+}
+
+/* line 79, src/scss/_main.scss */
+.main .proyects .contenedor-proyectos .proyecto .nombre {
+  font-weight: 700;
+  color: #b43268;
+  margin-bottom: 10px;
+}
+
+/* line 84, src/scss/_main.scss */
+.main .proyects .contenedor-proyectos .proyecto .categoria {
+  font-size: 14px;
+  color: #636363;
+}
+
+/* line 91, src/scss/_main.scss */
+.main .skills {
+  margin-top: 0;
+  background: palegoldenrod;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+/* line 96, src/scss/_main.scss */
+.main .skills .contenedor-skills {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 103, src/scss/_main.scss */
+.main .skills .contenedor-skills .skill {
+  text-align: center;
+  width: 10%;
+  background: #ffff;
+  padding: 10px;
+  margin: 17px;
+  border-radius: 10px;
+}
+
+/* line 110, src/scss/_main.scss */
+.main .skills .contenedor-skills .skill p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  font-size: 70%;
+}
+
+/* line 115, src/scss/_main.scss */
+.main .skills .contenedor-skills .skill img {
+  width: 100%;
+  vertical-align: top;
+  border-radius: 3px;
+}
+
+/* line 2, src/scss/_footer.scss */
+footer .contacto {
+  padding: 60px;
+}
+
+/* line 4, src/scss/_footer.scss */
+footer .contacto .titulo {
+  color: palevioletred;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* line 10, src/scss/_footer.scss */
+footer .contacto .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 14, src/scss/_footer.scss */
+footer .contacto .formulario .boton {
+  margin: auto;
+  background: #4568DC;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 40px;
+  cursor: pointer;
+}
+
+/* line 22, src/scss/_footer.scss */
+footer .contacto .formulario .boton:hover {
+  background: #2043b3;
+}
+
+/* line 27, src/scss/_footer.scss */
+footer .contacto input[type="texto"],
+footer .contacto input[type="email"],
+footer .contacto .formulario textarea {
+  border: 2px solid #cecece;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 15px;
+  color: #c5bfbf;
+}
+
+/* line 35, src/scss/_footer.scss */
+footer .contacto input[type="texto"]:focus,
+footer .contacto input[type="email"]:focus,
+footer .contacto .formulario textarea:focus {
+  border: 2px solid #4568DC;
+}
+
+/* line 39, src/scss/_footer.scss */
+footer .contacto input[type="texto"],
+footer .contacto input[type="email"] {
+  width: 49%;
+  margin-bottom: 15px;
+}
+
+/* line 44, src/scss/_footer.scss */
+footer .contacto textarea {
+  width: 100%;
+  height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+
+/* line 54, src/scss/_footer.scss */
+footer .redes-sociales {
+  background: #1e2b38;
+  padding: 60px 0;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 2, src/scss/_responsi.scss */
+  header .menu {
+    text-align: center;
+  }
+  /* line 7, src/scss/_responsi.scss */
+  .main .abaut .contenedor {
+    display: block;
+    text-align: center;
+  }
+  /* line 14, src/scss/_responsi.scss */
+  .main .skills .contenedor-skills .skill {
+    width: 25%;
+  }
+  /* line 21, src/scss/_responsi.scss */
+  .main .proyects .contenedor-proyectos .proyecto {
+    width: 40%;
+  }
+  /* line 26, src/scss/_responsi.scss */
+  .main .proyects .contenedor-proyectos .proyecto {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-width: 700px) {
+  /* line 31, src/scss/_responsi.scss */
+  .main .proyects .contenedor-proyectos .proyecto {
+    width: 40%;
+  }
+  /* line 37, src/scss/_responsi.scss */
+  .main .skills .contenedor-skills .skill {
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 800px) and (max-width: 500px) {
+  /* line 46, src/scss/_responsi.scss */
+  header .contenedor-texto .texto .nombre {
+    font-size: 35px;
+  }
+  /* line 49, src/scss/_responsi.scss */
+  eader .contenedor-texto .texto .profecion {
+    font-size: 18px;
+  }
+  /* line 52, src/scss/_responsi.scss */
+  .main .proyects .contenedor-proyectos .proyecto {
+    width: 100%;
+  }
+  /* line 55, src/scss/_responsi.scss */
+  .titulo {
+    font-size: 20px;
+  }
+  /* line 60, src/scss/_responsi.scss */
+  .main .abaut .contenedor {
+    display: block;
+    text-align: center;
+  }
+  /* line 67, src/scss/_responsi.scss */
+  .main .skills .contenedor-skills .skill {
+    width: 20%;
+  }
+}
+
+/* line 3, src/scss/_linea.scss */
+.linea {
+  background: #ceb6a5;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  padding: 30px;
+}
+
+/* line 13, src/scss/_linea.scss */
+.linea .timeline {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+/* line 20, src/scss/_linea.scss */
+.linea .timeline .timeline-items {
+  width: 100%;
+  background: #ceb6a5;
+  padding-bottom: 40px;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* line 27, src/scss/_linea.scss */
+.linea .timeline .timeline-items:nth-child(odd) {
+  text-align: right;
+  padding-right: calc(50% + 30px);
+  padding-right: -moz-calc(50% + 30px);
+  padding-right: -webkit-calc(50% + 30px);
+}
+
+/* line 31, src/scss/_linea.scss */
+.linea .timeline .timeline-items:nth-child(even) {
+  text-align: left;
+  padding-left: calc(50% + 30px);
+  padding-left: -moz-calc(50% + 30px);
+  padding-left: -webkit-calc(50% + 30px);
+}
+
+/* line 35, src/scss/_linea.scss */
+.linea .timeline .timeline-items .timeline-items-content {
+  background: lightcoral;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #bdcbd7;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* line 46, src/scss/_linea.scss */
+.linea .timeline .timeline-items h3 {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* line 52, src/scss/_linea.scss */
+.linea .timeline .timeline-items p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #d9d9d9;
+}
+
+/* line 57, src/scss/_linea.scss */
+.linea .timeline .timeline-items .timeline-items-dot {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #44123c;
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 8px);
+  left: -moz-calc(50% - 8px);
+  left: -webkit-calc(50% - 8px);
+}
+
+/* line 66, src/scss/_linea.scss */
+.linea .timeline .timeline-items .timeline-items-date {
+  font-size: 16px;
+  color: #6a125b;
+  font-weight: bold;
+  margin: 6px 0 5px;
+}
+
+/* line 75, src/scss/_linea.scss */
+.linea .timeline .timeline-items:last-child {
+  padding-bottom: 0;
+}
+
+@media (max-width: 760px) {
+  /* line 82, src/scss/_linea.scss */
+  .linea .timeline .timeline-items:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  /* line 87, src/scss/_linea.scss */
+  .linea .timeline .timeline-items:nth-child(odd), .linea .timeline .timeline-items:nth-child(even) {
+    padding-left: 35px;
+  }
+  /* line 91, src/scss/_linea.scss */
+  .linea .timeline .timeline-items .timeline-items-dot {
+    left: 0;
+  }
+}
+
+/* line 96, src/scss/_linea.scss */
+.linea .timeline .timeline-items::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #052f61;
+  left: calc(50% - 1px);
+  left: -moz-calc(50% - 1px);
+  left: -webkit-calc(50% - 1px);
+}
+
+@media (max-width: 760px) {
+  /* line 96, src/scss/_linea.scss */
+  .linea .timeline .timeline-items::before {
+    left: 7px;
+  }
+}
+
+/* line 7, src/scss/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, src/scss/style.scss */
+body {
+  background: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/* line 18, src/scss/style.scss */
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* line 24, src/scss/style.scss */
+.titulo {
+  color: palevioletred;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: cursive;
+}

@@ -1,0 +1,112 @@
+@import 'mixins';
+
+    .linea{
+        background: rgb(206, 182, 165);
+        width: 100%;
+        height: 100%;
+        align-self: center;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        padding: 30px;
+
+        .timeline{
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            
+            
+            .timeline-items{
+                width: 100%;
+                background: rgb(206, 182, 165);
+                padding-bottom: 40px;
+                position: relative;
+                border-radius: 10px;
+                
+                &:nth-child(odd){
+                    text-align: right;
+                    @include calc(padding-right, '50% + 30px');
+                }
+                &:nth-child(even){
+                    text-align: left;
+                    @include calc(padding-left, '50% + 30px');
+                }
+                .timeline-items-content{
+                    background: lightcoral;
+                    padding: 20px;
+                    border-radius: 8px;
+                    border: 1px solid lighten($color: #6e8da7, $amount: 25%);
+                    box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.7);
+                }
+
+                .timeline-items-content{
+
+                }
+                h3{
+                    color: #ffff;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                }
+                p{
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: darken($color: #ffff, $amount: 15%);
+                }
+                .timeline-items-dot{
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 50%;
+                    background-color: darken($color: #58174e, $amount: 5%);
+                    position: absolute;
+                    top: 10px;
+                   @include calc(left, '50% - 8px');
+                }
+                .timeline-items-date{
+                    font-size: 16px;
+                    color: lighten($color: #290723, $amount: 15%);
+                    font-weight: bold;
+                    margin: 6px 0 5px;
+    
+                }
+    
+  
+                &:last-child{
+                    padding-bottom: 0;
+    
+                }
+                @media (max-width:760px) {
+                   // margin-bottom: 20px;
+
+                    &:nth-child(odd){
+                        padding-right: 0;
+                        text-align: left;
+                        //@include calc(padding-right, '50% +30px');
+                    }
+                    &:nth-child(odd),
+                    &:nth-child(even){
+                        padding-left: 35px;
+                    }
+                    .timeline-items-dot{
+                        left: 0;
+                    }
+                    
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 100%;
+                    background: darken($color: #063b79, $amount: 5%);
+                    @include calc(left, '50% - 1px');
+    
+                    @media (max-width:760px) {
+                        left: 7px;
+                    }
+                }
+    
+            }
+            
+        }
+    }

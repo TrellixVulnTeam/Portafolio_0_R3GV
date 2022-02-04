@@ -1,0 +1,74 @@
+@media screen and (max-width:800px){
+    header .menu{
+        text-align: center;
+    }
+    .main {
+        .abaut{
+            .contenedor{
+                display: block;
+                text-align: center;
+            }
+        }
+        .skills{
+            .contenedor-skills{
+                .skill{
+                    width: 25%;
+                }
+            }
+        }
+        .proyects{
+            .contenedor-proyectos{
+                .proyecto {
+                    width: 40%;
+            }
+        }
+    }
+    .proyects .contenedor-proyectos .proyecto {
+        width: 45%;
+    }
+}
+@media screen and (max-width:700px){
+    .main .proyects .contenedor-proyectos .proyecto {
+        width: 40%;
+    }
+    .main{
+        .skills{
+            .contenedor-skills{
+                .skill{
+                    width: 19%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px){
+    header .contenedor-texto .texto .nombre{
+        font-size: 35px;
+    }
+    eader .contenedor-texto .texto .profecion{
+        font-size: 18px;
+    }
+    .main .proyects .contenedor-proyectos .proyecto {
+        width: 100%;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    .main {
+        .abaut{
+            .contenedor{
+                display: block;
+                text-align: center;
+            }
+        }
+        .skills{
+            .contenedor-skills{
+                .skill{
+                    width: 20%;
+                }
+            }
+        }
+    }
+    }
+}
